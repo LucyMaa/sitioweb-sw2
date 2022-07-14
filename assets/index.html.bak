@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.98.0">
+    <title>SME</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/product/">
+
+    
+
+    
+
+<link href="assets/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+	  .container {
+		  max-width: 960px;
+		}
+
+		/*
+		 * Custom translucent site header
+		 */
+
+		.site-header {
+		  background-color: rgba(0, 0, 0, .85);
+		  -webkit-backdrop-filter: saturate(180%) blur(20px);
+		  backdrop-filter: saturate(180%) blur(20px);
+		}
+		.site-header a {
+		  color: #fff;
+		  transition: color .15s ease-in-out;
+		}
+		.site-header a:hover {
+		  color: #fff;
+		  text-decoration: none;
+		}
+
+		/*
+		 * Dummy devices (replace them with your own or something else entirely!)
+		 */
+
+		.product-device {
+		  position: absolute;
+		  right: 10%;
+		  bottom: -30%;
+		  width: 300px;
+		  height: 540px;
+		  background-color: #333;
+		  border-radius: 21px;
+		  transform: rotate(30deg);
+		}
+
+		.product-device::before {
+		  position: absolute;
+		  top: 10%;
+		  right: 10px;
+		  bottom: 10%;
+		  left: 10px;
+		  content: "";
+		  background-color: rgba(255, 255, 255, .1);
+		  border-radius: 5px;
+		}
+
+		.product-device-2 {
+		  top: -25%;
+		  right: auto;
+		  bottom: 0;
+		  left: 5%;
+		  background-color: #e5e5e5;
+		}
+    .lead{
+      padding-top:6%;
+      padding-left: 4%;
+      padding-right: 4%;
+      color: black;
+    }
+    .leads{
+      padding-top:1%;
+      padding-left: 4%;
+      padding-right: 4%;
+      color: black;
+    }
+    .display-6{
+      color: black;
+    }
+    #class{
+      color: black;
+    }
+    #imagen{
+      padding-bottom: 50%;
+      
+    }
+    .nav-link{
+      padding-top: 1%;
+      column-rule-color: #fff;
+      color-scheme: white;
+      color: #fff;
+      text-decoration-color: #fff;
+    }
+    .gg{
+      padding-top: 5%;
+    }
+    <!--df-messenger {
+    --df-messenger-bot-message: #878fac;
+    --df-messenger-button-titlebar-color: #0059ff;
+    --df-messenger-chat-background-color: #black;
+    --df-messenger-font-color: white;
+    --df-messenger-send-icon: #878fac;
+    --df-messenger-user-message: #0051ff;
+   }-->
+
+
+		/*
+		 * Extra utilities
+		 */
+
+		.flex-equal > * {
+		  flex: 1;
+		}
+		@media (min-width: 768px) {
+		  .flex-md-equal > * {
+			flex: 1;
+		  }
+		}
+
+    </style>
+  </head>
+  <body>
+    
+<header class="site-header sticky-top py-1">
+  <nav class="container d-flex flex-column flex-md-row justify-content-between">
+    <a class="py-2" href="#" aria-label="Product">
+      <img src="assets/flojo.png" height="30" alt="Página principal Comfeco" />
+      
+    </a>
+    <a class="nav-link"href="#inicio">Inicio</a>
+    <a class="nav-link" href="#producto">Producto</a>
+    <a class="nav-link" href="#nosotros">Nosotros</a>
+    <a class="nav-link" href="#servicios">Servicios</a>
+    <a class="nav-link" href="#contactanos">Contactanos</a>
+  </nav>
+</header>
+
+<main>
+  <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light" id="inicio">
+    <div class="col-md-5 p-lg-5 mx-auto my-5">
+      <h1 class="display-4 fw-normal">Sistema de monitoreo y evaluacion</h1>
+      <p class="lead fw-normal">Nsoft ofrece un comodo sistema de monitoreo de temperaturas corporales usando componentes de IoT de buena calidad, el sistema le permite llevar un control de sus temperaturas, hacer reservas en clinicas locales..</p>
+      <a class="btn btn-secondary" href="https://control-de-salud.netlify.app/auth/login">Pruebalo ahora</a>
+    </div>
+    <div class="product-device shadow-sm d-none d-md-block"></div>
+    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+  </div>
+
+  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3" id="producto">
+    <div class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+      <div class="my-3 py-3">
+        <h2 class="display-5">Version web</h2>
+        <p class="lead"></p>
+      </div>
+      <a class="py-2" href="#" aria-label="Product" >
+        <img style= "border-radius: 21px 21px 0 0;" src="assets/WEB2.png" height="335"; alt="Página principal Comfeco" />
+      </a>  
+      
+    </div>
+    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="my-3 p-3">
+        <h2 class="display-5">Version movil</h2>
+      </div>
+      <a class="py-2" href="#" aria-label="Product" >
+        <img style= "border-radius: 21px 21px 0 0;" src="assets/MOVIL.png" height="400"; alt="Página principal Comfeco" />
+      </a>   
+    </div>
+  </div>
+
+  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3" id="nosotros">
+    <div class="bg-primary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+      <div class="my-3 py-3">
+        <h2 class="display-5">Nosotros</h2>
+        
+      </div>
+      <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+        <p class="lead">Nsoft es una empresa de nueva creación que comercializa productos o servicios a través del uso de las nuevas tecnologías con un modelo de negocio escalable que permita un crecimiento rápido y sostenido en el tiempo.
+
+          Nsoft ofrece entre sus servicio un sistema simple, economico, de facil uso para el monitoreo de temperaturas ideal para todo tipo de usuarios, entre sus funcionalidades ofrece:
+          
+          Monitoreo por usuario
+          Registro de temperatura por usuario
+          Reserva de un cita medica
+          Pago mediante criptomonedas u otros</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3" id="servicios">
+    <div class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+      <div class="my-3 py-3">
+        <h2 class="display-5">Servicios</h2>
+        
+      </div>
+  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" style=" border-radius: 21px 21px 0 0;">
+      <div class="my-3 p-3">
+        <h2 class="display-6">Nuevas funcionalidades</h2>
+        <p class="lead">Acorde a las necesidades del cliente.</p>
+      </div>
+      <a class="py-2" href="#" aria-label="Product" >
+        <img style= "border-radius: 21px 21px 0 0;" src="assets/service1.jpg" height="252" alt="Página principal Comfeco" />
+      </a> 
+    </div>
+    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" style=" border-radius: 21px 21px 0 0;">
+      <div class="my-3 py-3">
+        <h2 class="display-6">Soluciones personalizadas</h2>
+        <p class="lead">Reemplazo y refaccion de componentes.</p>
+      </div>
+      <a class="py-2" href="#" aria-label="Product" >
+        <img style= "border-radius: 21px 21px 0 0;" src="assets/service2.jpg" height="250" alt="Página principal Comfeco" />
+      </a> 
+    </div>
+    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" style=" border-radius: 21px 21px 0 0;">
+      <div class="my-3 py-3">
+        <h2 class="display-6">Soporte tecnico</h2>
+        <p class="lead">Soluciones economicas, eficaces.</p>
+      </div>
+      <a class="" href="#" aria-label="Product" id="imagen" >
+        <img style= "border-radius: 21px 21px 0 0;" src="assets/service3.jpg" height="250"  />
+      </a> 
+    </div>
+    </div>
+  </div>
+
+</div>
+</div>
+      <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3" id="contactanos">
+        <div class="bg-secondary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+          <div class="my-3 py-3">
+            <h2 class="display-5">Contactanos</h2>
+            
+          </div>
+          <div class="bg-light shadow-sm mx-auto" style="width: 50%; height: 500; border-radius: 21px 21px 0 0;">
+            <hr>
+            <hr>
+            <p class="leads">Correo: nsoft@gmail.com  </p>
+            <p class="leads">Telefono: 75363339 - 76672651</p>
+            <p class="leads"> Direccion: Santa Cruz de la sierra, zona sur, calle Davo Terrazas # 53</p>
+            <a class="" href="#" aria-label="Product" id="imagen" >
+              <img style= "border-radius: 21px 21px 0 0;" src="assets/ubicacion.png" height="300"  />
+            </a> 
+          </div>
+          
+        </div>
+      </div>
+
+</div>
+</div>
+
+<footer class="container py-5">
+  <div class="row">
+    <div class="col-12 col-md">
+      <a class="py-2" href="#" aria-label="Product">
+        <img src="assets/flojo.png" height="30" alt="Página principal Comfeco" />
+      </a>
+      <small class="gg d-block mb-3 text-muted">&copy; 2020–2022</small>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Caracteristicas</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="link-secondary" href="#">Cosas interesantes</a></li>
+        <li><a class="link-secondary" href="#">Funcion aleatoria</a></li>
+        <li><a class="link-secondary" href="#">Funcion de equipo</a></li>
+        <li><a class="link-secondary" href="#">Cosas para desarrolladores</a></li>
+      </ul>
+    </div>
+    
+    <div class="col-6 col-md">
+      <h5>Recursos</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="link-secondary" href="#">Negocios</a></li>
+        <li><a class="link-secondary" href="#">Educacion</a></li>
+        <li><a class="link-secondary" href="#">Gobierno</a></li>
+        <li><a class="link-secondary" href="#">Entretenimiento</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Acerca</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="link-secondary" href="#">Equipo</a></li>
+        <li><a class="link-secondary" href="#">ubicacion</a></li>
+        <li><a class="link-secondary" href="#">Privacidad</a></li>
+        <li><a class="link-secondary" href="#">Terminos</a></li>
+      </ul>
+    </div>
+	<div>
+	<iframe height="430" width="350" src="https://bot.dialogflow.com/83fcdb80-6c5c-4a99-ae1c-9eb47441a081"></iframe>
+	</div>
+  </div>
+</footer>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+    intent="WELCOME"
+    chat-title="landign-page-bot"
+    agent-id="dae6b580-ecf0-408e-a671-673890449955"
+    language-code="es"
+    ></df-messenger>
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
